@@ -31,6 +31,7 @@ module.exports = [{
     entry: ['./scss/app.scss', './js/app.js'],
     output: {
         filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist'),
     },
     module: {
         rules: [
