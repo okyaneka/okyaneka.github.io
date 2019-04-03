@@ -1,0 +1,41 @@
+body {
+  padding: 80px 160px;
+  background-color: #121212;
+}
+
+.kulooky-title {
+  border-right: solid 3px rgba(0, 255, 0, .75);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 42px;
+  color: rgba(255, 255, 255, .70);
+}
+
+/* Animation */
+
+.kulooky-title {
+  animation: animated-text 1.5s steps(10) 1s 1 normal both, animated-cursor 600ms steps(10) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 250px;
+  }
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(0, 255, 0, .75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}

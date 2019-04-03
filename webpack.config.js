@@ -30,7 +30,7 @@ function materialImporter(url, prev) {
 module.exports = [{
     entry: ['./scss/app.scss', './js/app.js'],
     output: {
-        filename: 'bundle.js',
+        filename: 'js/bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
     module: {
@@ -41,7 +41,7 @@ module.exports = [{
                     {
                         loader: 'file-loader',
                         options: {
-                            name: 'bundle.css',
+                            name: 'css/bundle.css',
                         },
                     },
                     { loader: 'extract-loader' },
