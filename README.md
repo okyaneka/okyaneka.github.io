@@ -2,4 +2,4 @@
 
 Hello World!
 
-This is [link](okyaneka.github.io)
+[okyaneka.github.is](okyaneka.github.io)
